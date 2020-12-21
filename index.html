@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+ 
+    <title>
+  <friends class="com"></friends>
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="beige">
+   
+    
+    <div class ="header">
+        <font size = "7">
+        <h1{color="red",fontsize=20px}>
+   <b><i><u> React Native </u> </i> </b>
+    </h1>
+</font>
+</div>
+
+<div class ="link">
+<a href="https://reactnative.dev/docs/getting-started">Click here to view the original website</a>
+</div>
+<div class="pic">
+<a href="#"><img src="React_Native_Tutorial.jpg"width=800 height=500/></a><br><br>
+</div>
+<div class = "layout">
+   <b> Many different kinds of people use React Native: from advanced iOS developers to React beginners, to people getting started programming for the first time in their career. These docs were written for all learners, no matter their experience level or background.
+
+    How to use these docs#
+    You can start here and read through these docs linearly like a book; or you can read the specific sections you need. Already familiar with React? You can skip that section—or read it for a light refresher.
+    
+    Prerequisites#
+    To work with React Native, you will need to have an understanding of JavaScript fundamentals. If you’re new to JavaScript or need a refresher, you can dive in or brush up at Mozilla Developer Network.
+    
+    While we do our best to assume no prior knowledge of React, Android, or iOS development, these are valuable topics of study for the aspiring React Native developer. Where sensible, we have linked to resources and articles that go more in depth.
+    
+    Interactive examples#
+    This introduction lets you get started immediately in your browser with interactive examples like this one:
+    
+    
+    The above is a Snack Player. It’s a handy tool created by Expo to embed and run React Native projects and share how they render in platforms like Android and iOS. The code is live and editable, so you can play directly with it in your browser. Go ahead and try changing the "Try editing me!" text above to "Hello, world!"
+    
+    Optionally, if you want to setup a local development environment, you can follow our guide to setting up your environment on your local machine and paste the code examples into your App.js file there. (If you are a web developer, you may already have a local environment set up for mobile browser testing!)
+    
+    Function Components and Class Components#
+    With React, you can make components using either classes or functions. Originally, class components were the only components that could have state. But since the introduction of React's Hooks API, you can add state and more to function components.
+    
+    Hooks were introduced in React Native 0.58., and because Hooks are the future-facing way to write your React components, we wrote this introduction using function component examples. Where useful, we also cover class components under a toggle like so:
+    
+    
+    You can find more examples of class components in previous versions of this documentation.
+    
+    Developer Notes#
+    People from many different development backgrounds are learning React Native. You may have experience with a range of technologies, from web to Android to iOS and more. We try to write for developers from all backgrounds. Sometimes we provide explanations specific to one platform or another like so:
+    
+    Web developers may be familiar with this concept.
+    
+    Formatting#
+    Menu paths are written in bold and use carets to navigate submenus. Example: Android Studio > Preferences
+    
+    Now that you know how this guide works, it's time to get to know the foundation of React Native: Native Components.</b><br><br>
+<a href="#"><img src="vs.jpg"width=500 height=1000/></a><br><br>
+
+</div>
+<div class = "content">
+    
+<marquee bgcolor="pink" height="70" direction="right" behaviour="scroll">
+
+    <h3>
+       Interaction
+   </h3>
+
+   </marquee>
+   Handling Touches
+   Users interact with mobile apps mainly through touch. They can use a combination of gestures, such as tapping on a button, scrolling a list, or zooming on a map. React Native provides components to handle all sorts of common gestures, as well as a comprehensive gesture responder system to allow for more advanced gesture recognition, but the one component you will most likely be interested in is the basic Button.
+   
+   Displaying a basic button#
+   Button provides a basic button component that is rendered nicely on all platforms. The minimal example to display a button looks like this:
+   
+   
+   This will render a blue label on iOS, and a blue rounded rectangle with light text on Android. Pressing the button will call the "onPress" function, which in this case displays an alert popup. If you like, you can specify a "color" prop to change the color of your button.
+   
+   
+   
+   Go ahead and play around with the Button component using the example below. You can select which platform your app is previewed in by clicking on the toggle in the bottom right and then clicking on "Tap to Play" to preview the app.
+   
+   
+   Touchables#
+   If the basic button doesn't look right for your app, you can build your own button using any of the "Touchable" components provided by React Native. The "Touchable" components provide the capability to capture tapping gestures, and can display feedback when a gesture is recognized. These components do not provide any default styling, however, so you will need to do a bit of work to get them looking nicely in your app.
+   
+   Which "Touchable" component you use will depend on what kind of feedback you want to provide:
+   
+   Generally, you can use TouchableHighlight anywhere you would use a button or link on web. The view's background will be darkened when the user presses down on the button.
+   
+   You may consider using TouchableNativeFeedback on Android to display ink surface reaction ripples that respond to the user's touch.
+   
+   TouchableOpacity can be used to provide feedback by reducing the opacity of the button, allowing the background to be seen through while the user is pressing down.
+   
+   If you need to handle a tap gesture but you don't want any feedback to be displayed, use TouchableWithoutFeedback.
+   
+   In some cases, you may want to detect when a user presses and holds a view for a set amount of time. These long presses can be handled by passing a function to the onLongPress props of any of the "Touchable" components.
+   
+   Let's see all of these in action:
+   
+   
+   Scrolling and swiping#
+   Gestures commonly used on devices with touchable screens include swipes and pans. These allow the user to scroll through a list of items, or swipe through pages of content. For these, check out the ScrollView Core Component.</div>
+
+
+</body>
+</html>
